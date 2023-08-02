@@ -1,0 +1,39 @@
+header {
+    background:aqua;
+    width:calc(100% - 60px); height:100px;
+    margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:space-between;
+}
+header h1 {
+    width:213px;
+}
+header h1 img {width:100%;}
+header .right {
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+}
+header .right > *{margin-left:15px;} 
+header .right .lang {margin-left:0;}
+header .right #searchFrm {
+    background:#bbb;
+    border-radius:15px; width:300px;
+}
+header .right #searchFrm fieldset {
+    height:40px; padding:0 15px;
+    display:flex; justify-content:space-between; align-items:center;
+}
+header .right #searchFrm fieldset #searchTxt {
+    background:none; color:#fff;
+}
+header .right #searchFrm fieldset #searchTxt::placeholder {color:#fff}
+header .right #searchFrm fieldset #searchBtn {
+    background:none; width:24px; height:24px;
+}
+header .right #searchFrm fieldset #searchBtn img {width:100%;}
+header .right #login, header .right #cart, header .right #menu {width:40px; height:40px;}
+header .right #login img, header .right #cart img, header .right #menu img {width:100%;}
+header .right #cart {}
+header .right #cart img {}
+header .right #menu {}
+header .right #menu img {}
