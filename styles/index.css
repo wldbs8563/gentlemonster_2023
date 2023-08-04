@@ -46,6 +46,35 @@ main .visual video {
 /* 2. 가장 큰 데스크탑 기준으로 너비를 100%보다 크게 설정하고 넘치게 하는 방법 */
 /* 3. 상대크기가 아닌 절대크기값(px) 크기를 설정해서 화면 해상도에 영향을 받지 않는 방법*/
 
+/* -- main 2. bnr */
+main .adver_bnr {
+    background:url(../images/banner.jpg) center;
+    width:100%; height:300px;
+}
+main .adver_bnr .txt {
+    padding:55px 0  0 127px;
+}
+main .adver_bnr .txt p {
+    font-size:1.777rem; color:#fff;
+}
+main .adver_bnr .txt h1 {
+    font-size:3.157rem; color:#222;
+    font-weight:700; margin:30px 0;
+}
+main .adver_bnr .txt .link {}
+main .adver_bnr .txt .link a {
+    display:inline-block;
+    width:150px; padding:15px 0; color:#fff;
+    background:rgba(34, 34, 34, 0.7); border-radius:15px;
+    transition:all 0.3s linear;  letter-spacing:-0.02em;
+    text-align:center;
+}
+main .adver_bnr .txt .link a:hover {
+    color:#222; background:rgba(255, 255, 255, 0.7);
+    font-weight:700; animation:link 0.5s;
+}
+main .adver_bnr .txt .link a:first-child {margin-right:10px;}
+
 @keyframes link {
     0%{transform: scale(105%);}
     100%{transform: scale(100%);}
