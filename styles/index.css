@@ -106,7 +106,7 @@ main #shop_service .txt .service_link {
 }
 main #shop_service {
     background:url(../images/service_bg2.jpg) no-repeat;
-    background-position:left -150px;
+    background-position:left -150px top -200px;
     background-size:80%;
     padding-top:100px;
     display:flex; flex-flow:row-reverse;

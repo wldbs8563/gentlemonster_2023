@@ -98,3 +98,31 @@ header #open_nav nav a {
 header #open_nav nav a:hover {
     color:#1768B2; transform: translateY(-10px);
 }
+/* footer */
+footer {width:calc(100% - 60px); margin:0 auto;}
+footer .f_menu {
+    display:flex; margin-top:100px;
+}
+footer .f_menu dl {}
+footer .f_menu dl dt {
+    font-size:1.333rem; font-weight:500;
+    margin-bottom:30px;
+}
+footer .f_menu dl dd a {
+    line-height:30px; color:#888;
+}
+footer .f_menu dl dd a:hover {
+    color:#000; font-weight:500;
+}
+footer .f_menu .service {}
+footer .f_menu .law {margin:0 130px;}
+footer .f_menu .sns {}
+footer .f_copy {
+    display:flex; flex-flow:row nowrap;
+    justify-content: space-between;
+    margin:50px 0;
+}
+footer .f_copy p {width:213px; margin-top:10px;}
+footer .f_copy p img {width:100%;}
+footer .f_copy address {line-height:30px;}
+footer .f_copy address a {text-decoration:underline;}
