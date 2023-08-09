@@ -1,0 +1,107 @@
+/* login css */
+main {}
+main .login_top {
+    width:1200px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .login_top a {
+    width:40px; height:40px;
+    display:inline-block;
+}
+main .login_top a img {width:100%;}
+main .contents {
+    width:736px; margin:0 auto;
+    text-align:left;
+    padding:50px 0;
+}
+main .contents h1 {
+    font-size:3.157rem; font-weight:700;
+}
+main .contents .txt {
+    font-size:1.777rem;
+    margin:50px 0; letter-spacing:-0.02em;
+    line-height:40px;
+}
+main .contents .kakao {
+    background:#FEE500;
+    border-radius:20px;
+}
+main .contents .kakao a {
+    display:inline-block; text-align:center;
+    font-size:2.369rem; letter-spacing:-0.02em;
+    padding:20px 100px;
+}
+main .contents .kakao a img {width:40px; margin-right: 50px;}
+main .or {
+    font-size:1.333rem; color:#AAA;
+    text-align:center;
+}
+main .or::before {
+    width:350px; height:1px;
+    background:#AAA; content:'';
+    display:inline-block; margin-bottom:8px;
+}
+main .or::after {
+    width:350px; height:1px;
+    background:#AAA; content:'';
+    display:inline-block; margin-bottom:8px;
+}
+main .naver_apple {
+    text-align:center;
+    margin:50px 0;
+}
+main .naver_apple a {
+    width:80px; height:80px;
+    display:inline-block
+}
+main .naver_apple a img {width:100%;}
+main .naver_apple .naver { margin-right:50px;}
+main .naver_apple .apple {}
+main .login {
+    text-align:center;
+    margin:70px 0;
+}
+main .login a {
+    width:300px; background:#eee;
+    color:#aaa; display:inline-block;
+    padding:15px; border-radius:20px;
+    margin-right:20px;
+}
+main .login a.active {
+    background:#222; color:#fff;
+}
+main #loginFrm {}
+main #loginFrm fieldset {
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+main #loginFrm fieldset input {
+    width:610px; border-bottom:1px solid #aaa;
+}
+main #loginFrm fieldset input::placeholder {
+    color:#aaa;
+}
+main #loginFrm fieldset #id {
+    margin-bottom:30px;
+}
+main #loginFrm fieldset #pw {}
+main #loginFrm fieldset #loginBtn {
+    margin-top:75px; width:610px; padding:20px 0;
+    border-radius:20px; font-size:1.777rem;
+}
+main .search_join {
+    width:610px; margin:50px auto;
+    color:#aaa;padding-bottom:50px;
+}
+main .search_join .left {
+    display: flex; flex-flow:row nowrap;
+    float: left;
+}
+main .search_join .left .search_id::after {
+    width:1px; height:10px;
+    background:#AAA; content:'';
+    display:inline-block; margin:0 25px;
+}
+main .search_join .left > p {}
+main .search_join .join {float:right;}
