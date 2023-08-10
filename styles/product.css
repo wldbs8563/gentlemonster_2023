@@ -1,0 +1,95 @@
+/* 1. swiper-slide */
+main {}
+/* 2. category */
+main #category {
+    display:flex; justify-content:space-between;
+    width:1350px; margin:0 auto;
+    padding:50px 0;
+}
+main #category a {
+    width:170px;
+    border-radius:50%;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+main #category a img {width:100%;}
+main #category a span {
+    font-size:1.333rem; padding-top:20px;
+}
+/* 3. procuct_list */
+main #product_list {width:1350px; margin:0 auto;}
+main #product_list .title {
+    margin:50px 0;
+}
+main #product_list .title .title_top {
+    display:flex; align-items:end;
+    justify-content:space-between;
+    border-bottom:2px solid #000;
+    padding-bottom:30px;
+}
+main #product_list .title .title_top h1 {
+    font-size:3.157rem; font-weight:500;
+}
+main #product_list .title .title_top .title_right {
+    
+}
+main #product_list .title .title_top .title_right a {
+    font-size:1.333rem; padding-left:20px;
+    color:#aaa;
+}
+main #product_list .title .title_top .title_right a:first-child {padding-left:0;}
+main #product_list .title .title_btm {
+    display:flex; justify-content:space-between;
+    align-items: end;
+    margin-top:30px;
+}
+main #product_list .title .title_btm p {
+    font-size:1.333rem;
+}
+main #product_list .title .title_btm p em {
+    font-size:1.333rem; font-weight:700;
+}
+main #product_list .title .title_btm #product_align {font-size:1.333rem;}
+main #product_list .title .title_btm #product_align option {}
+main #product_list .container {
+    display:flex; justify-content:space-between;
+} 
+main #product_list .container .item {}
+main #product_list .container .item .box {
+    position: relative; overflow:hidden;
+}
+main #product_list .container .item .box .item_img {
+    width:265px; height:300px;
+    display:block;
+}
+main #product_list .container .item .box .item_img img {width:100%;}
+main #product_list .container .item .box .like_img {
+    position: absolute; top:10px;right:10px;
+    z-index:999;
+}
+main #product_list .container .item .box .like_img img {}
+main #product_list .container .item .txt {}
+main #product_list .container .item .txt h2 {
+    padding-top:10px; font-weight:500;
+}
+main #product_list .container .item .txt p{
+    padding-top:10px;
+}
+main #product_list .container .item .txt .name {font-weight:500;}
+main #product_list .container .item .txt .price {}
+main #product_list .container .item .txt .color {}
+main #product_list .container .item .txt .color span {
+    width:24px; height:24px;
+    border:1px solid #ddd;
+    border-radius:50%;
+    display:inline-block;
+}
+main #product_list .container .item .txt .color .black {
+    background:#000;
+}
+main #product_list .container .item .txt .color .gray {
+    background:#808080;
+}
+main #product_list .container .item .txt .color .white {
+    background:#fff;
+}
