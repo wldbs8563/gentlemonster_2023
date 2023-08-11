@@ -29,7 +29,7 @@ main .contents .kakao {
 }
 main .contents .kakao a {
     display:inline-block; text-align:center;
-    font-size:2.369rem; letter-spacing:-0.02em;
+    font-size:1.777rem; letter-spacing:-0.02em;
     padding:20px 100px;
 }
 main .contents .kakao a img {width:40px; margin-right: 50px;}

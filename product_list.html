@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     <title>안경 | GENTLEMONSTER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/product.css">
 </head>
 <body>
     <!-- header.php -->
+    <?php include("./header.php") ?>
     <main>
         <!-- 1. swiper-slide -->
+        <div class="swiper" id="product_slide">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide1">
+                    <dl class="txt">
+                        <dt><em>캐쥬얼&댄디한</em><br>분위기 연출,</dt>
+                        <dd>GentleMonster</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide2">
+                    <dl class="txt">
+                        <dt><em>캐쥬얼&댄디한</em><br>분위기 연출,</dt>
+                        <dd>GentleMonster</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide3">
+                    <dl class="txt">
+                        <dt><em>캐쥬얼&댄디한</em><br>분위기 연출,</dt>
+                        <dd>GentleMonster</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide4">
+                    <dl class="txt">
+                        <dt><em>캐쥬얼&댄디한</em><br>분위기 연출,</dt>
+                        <dd>GentleMonster</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide5">
+                    <dl class="txt">
+                        <dt><em>캐쥬얼&댄디한</em><br>분위기 연출,</dt>
+                        <dd>GentleMonster</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide6">
+                    <dl class="txt">
+                        <dt><em>캐쥬얼&댄디한</em><br>분위기 연출,</dt>
+                        <dd>GentleMonster</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
         <!-- 2. category -->
         <div id="category">
             <a href="">
@@ -149,5 +197,41 @@
         </div>
     </main>
     <!-- footer.php -->
+    <?php include("./footer.php") ?>
+    <script src="./script/common.js"></script>
+    <script>
+        //특정 페이지에만 해당하는 JS동작기능은 내부스트립트로 작성해도 된다.
+        //product_slide 기능은 product_list.html에만 존재한다.(내부)
+        //header swiper기능은 header가 모든 페이지에 존재하기 때문에 외부에 작성해야 한다.
+        const product_slide = new Swiper('#product_slide',{
+            slidesPerView:1,//한번에 보이는 슬라이드 갯수
+            centeredSlides:true,//슬라이드 기준이 중심부터
+            loop:true,//무한반복 설정
+            autoplay:{delay:2000},//자동재생
+            speed:800,//넘어가는 속도 슬라이드 전환 시 부드러운 전환
+            scrollbar:{el:'#product_slide .swiper-scrollbar'},//스크롤바 표시
+            on:{ //슬라이드 변경 옵션
+                init:function(){
+                    //슬라이드가 변경되기 전 초기 실행함수
+                    this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1';
+                },
+                slideChange:function(){
+                    //슬라이드 변경될 때 인식되는 실행함수
+                    //1. 활성화 전 모든 슬러이드 opacity:0
+                    this.slides.forEach(target => {
+                        target.querySelector('.txt').style.opacity = '0';
+                        target.querySelector('.txt').style.transform = 'translateX(30px)';
+                    })
+                    //2. 활성화 슬라이드만 opacity:1
+                    this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1';
+                    this.slides[this.activeIndex].querySelector('.txt').style.transform = 'translateX(0)';
+                },
+            },
+            breakpoints:{
+                700:{slidesPerView:2, centeredSlides:false,},
+                1000:{slidesPerView:3, centeredSlides:true,},
+            },
+        });
+    </script>
 </body>
 </html>
